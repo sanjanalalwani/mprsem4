@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+          <img src="Student Performance Tracker final.png" alt="" width="130px" class="center">
+      </div>
+      <ul>
+          <li class="home"><a href="">Home</a></li>
+      </ul>
+      <ul>
+          <li class="about"><a href="about.html">About</a></li>
+      </ul>
+      <ul>
+          <li>
+              <div class="dropdown">
+              <button class="dropbtn">My Profile</button>
+              <div class="dropdown-content">
+                  <a href="">Login</a>
+                  <a href="">Help</a>
+                  <a href="">Settings</a>
+                  <hr>
+                  <a href="">Support</a>
+                  <a href="">Contact</a>
+              </div>
+          </div>
+          </li>
+      </ul>
+  </nav>
+</header>
+  <br>
+     <h1>About Us</h1>
+     <br>
+     <div class="slideshow-container">
+     
+     <div class="mySlides fade">
+       <h2>Schedule your daily planner!</h2>
+       <img src="schedule.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     <div class="mySlides fade">
+       <h2>Learn More!</h2>
+       <img src="learn.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     <div class="mySlides fade">
+       <h2>See your improvement!</h2>
+       <img src="progress.jpg" style="width:100%">
+       <div class="text"></div>
+     </div>
+     
+     </div>
+     <br>
+     
+     <div style="text-align:center">
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+     </div>
+     <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <br>
+</body>
+</html>
