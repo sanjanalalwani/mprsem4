@@ -101,6 +101,9 @@ video{
     left: 0px;
 }
 .container{
+    height: 90vh;
+    width: 233px;
+    margin: 30px;
     position: absolute;
     right: 160px;
     top: 300px;
