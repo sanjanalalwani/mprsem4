@@ -101,13 +101,15 @@ video{
     left: 0px;
 }
 .container{
-    height: 90vh;
+    height: 20vh;
     width: 233px;
     margin: 30px;
+    background: rgb(237, 228, 254);
+    border: thick double rgb(192, 129, 255);
+    border-radius: 10px;
     position: absolute;
     right: 160px;
     top: 300px;
-    background-color: rgb(255,255,255);
     padding: 20px 40px;
     border-radius: 4px;
 }
