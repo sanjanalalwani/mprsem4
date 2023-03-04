@@ -53,7 +53,6 @@
 
     <form action="" method="post">
         <h3>Login</h3>
-        <input type="text" name="name" required placeholder="enter your name">
         <input type="text" name="email" required placeholder="enter your email">
         <input type="password" name="password" required placeholder="enter password">
         <input type="submit" name="submit" value="register now" class="form-btn">
