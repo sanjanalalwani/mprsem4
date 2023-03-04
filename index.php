@@ -1,4 +1,34 @@
 <!-- login page -->
+<?php
+@include 'config.php';
+session_start();
+if(isset($_POST['submit'])){
+$name=mysqli_real_escape_string($conn, $_POST['name']);
+$email=mysqli_real_escape_string($conn, $_POST['email']);
+$password=md5($_POST['password']);
+$cpassword=md5($_POST['cpassword']);
+$user_type=$_POST['user_type'];
+$select="SELECT * FROM user_form WHERE email='$email' && password='$password' ";
+
+$result=mysqli_query($conn, $select);
+if(mysqli_num_rows($result)>0){
+    $row=mysqli_fetch_array($result);
+    if($row['user_type']== 'teacher'){
+        $_SESSION['teacher_name']=$row['name'];
+        header('location:teacher.php');
+    }
+    elseif($row['user_type']== 'student'){
+        $_SESSION['student_name']=$row['name'];
+        header('location:student.php');
+}
+}
+else{
+    $error[]='incorrect email or password!';
+}
+};
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +83,13 @@
 
     <form action="" method="post">
         <h3>Login</h3>
+        <?php 
+        if(isset($error)){
+            foreach($error as $error){
+                echo '<span class="error-msg">'.$error.'</span>';
+            };
+        };
+        ?>
         <input type="text" name="email" required placeholder="enter your email">
         <input type="password" name="password" required placeholder="enter password">
         <input type="submit" name="submit" value="register now" class="form-btn">
