@@ -45,7 +45,7 @@ else{
                 <img src="Student Performance Tracker final.png" alt="" width="130px" class="center">
             </div>
             <ul>
-                <li class="home"><a href="index.html">Home</a></li>
+                <li class="home"><a href="index.php">Home</a></li>
             </ul>
             <ul>
                 <li class="about"><a href="about.html">About</a></li>
@@ -60,7 +60,7 @@ else{
                     <div class="dropdown">
                     <button class="dropbtn">My Profile</button>
                     <div class="dropdown-content">
-                        <a href="">Login</a>
+                        <a href="index.php">Login</a>
                         <a href="">Help</a>
                         <a href="">Settings</a>
                         <hr>
