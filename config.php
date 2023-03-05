@@ -1,3 +1,3 @@
 <?php
-$conn = mysqli_connect('localhost','root','','mprsem4-1');
+$conn = mysqli_connect('localhost','root','','user_db');
 ?>

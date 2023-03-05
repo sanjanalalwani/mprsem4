@@ -90,7 +90,7 @@ else{
         ?>
         <input type="text" name="email" required placeholder="Enter email">
         <input type="password" name="password" required placeholder="Enter password">
-        <input type="submit" name="submit" value="register now" class="form-btn">
+        <input type="submit" name="submit" value="Login" class="form-btn">
         <p>Don't have an account?<a href="register.php">Register</a></p>
     </form>
     </div>
