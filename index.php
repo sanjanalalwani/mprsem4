@@ -51,7 +51,7 @@ else{
                 <li class="about"><a href="about.html">About</a></li>
             </ul>
             <ul>
-                <li class="contact"><a href="">Contact</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
             </ul>
             <ul>
                 <li>
