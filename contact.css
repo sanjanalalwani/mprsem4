@@ -8,6 +8,7 @@ header{
 }
 nav{
     display: flex;
+    background-color: antiquewhite;
 }
 .logo{
     width: 130px;
@@ -18,7 +19,7 @@ nav{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 85%;
 }
 nav ul{
     position: absolute;
@@ -29,7 +30,7 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    top: 40px;
+    top: 60px;
     list-style: none;
     padding: 0 40px;
 }
@@ -53,13 +54,13 @@ nav ul li a:hover{
 }
 .contact{
     position: absolute;
-    left: 90px;
-    top:-3px;
+    left: 347px;
+    top: 60px;
 }
 .dropbtn{
     position: absolute;
-    top: -65px;
-    left: 297px;
+    top: 0px;
+    left: 1014px;
     background-color: transparent;
     color: black;
     padding: 11px;
@@ -75,8 +76,8 @@ nav ul li a:hover{
     border-radius: 5px;
     display: none;
     position: absolute;
-    top: 20px;
-    left: 300px;
+    top: 40px;
+    left: 950px;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0.0.0.0.2);
@@ -118,6 +119,8 @@ form{
     padding: 40px;
     border-radius: 3px;
     box-sizing: border-box;
+    display: block;
+    position: sticky;
 }
 h1{
     margin: 0;
@@ -166,4 +169,9 @@ input[type="submit"]{
 }
 #success{
     color: #28a745;
+}
+footer{
+    text-align: center;
+    height: 40px;
+    background-color: rgb(255, 255, 255,0);
 }
