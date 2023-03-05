@@ -51,12 +51,10 @@ else{
                 <li class="about"><a href="about.html">About</a></li>
             </ul>
             <ul>
+                <li class="contact"><a href="">Contact</a></li>
+            </ul>
+            <ul>
                 <li>
-                    <ul>
-                        <li class="contact"><a href="">Contact</a></li>
-                    </ul>
-                    <ul>
-                        <li>
                     <div class="dropdown">
                     <button class="dropbtn">My Profile</button>
                     <div class="dropdown-content">
@@ -71,7 +69,7 @@ else{
             </ul>
         </nav>
     </header>
-    <br>
+
     <hr>
     <div class="image">
         <video width="800" height="800" autoplay muted>
@@ -90,13 +88,18 @@ else{
             };
         };
         ?>
-        <input type="text" name="email" required placeholder="enter your email">
-        <input type="password" name="password" required placeholder="enter password">
+        <input type="text" name="email" required placeholder="Enter email">
+        <input type="password" name="password" required placeholder="Enter password">
         <input type="submit" name="submit" value="register now" class="form-btn">
         <p>Don't have an account?<a href="register.php">Register</a></p>
     </form>
     </div>
-          </div>
     </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+          <p class="text-center"><a href="#"><img src="https://img.icons8.com/material-sharp/20/contact-card.png" alt=""></a>: 7977318761</p>
+          <p class="text-center"><a href="#"><img src="https://img.icons8.com/ios/20/new-post.png" alt=""></a>: studentperformance1@gmail.com</p>
+          <p class="text-center"><a href="#"><img src="location.png" alt="" width="30px" height="30px"></a>: Mumbai, India</p>
+      </footer>
 </body>
 </html>

@@ -59,8 +59,8 @@ nav ul li a:hover{
 }
 .dropbtn{
     position: absolute;
-    top: -7px;
-    left: 1000px;
+    top: 4px;
+    left: 1014px;
     background-color: transparent;
     color: black;
     padding: 11px;
