@@ -78,7 +78,7 @@ header('location:index.php');
             <option value="eight">VIII</option>
         </select>
         
-        <input type="submit" name="submit" value="GO" class="form-btn">
+      <a href="./schedule/">  <input type="submit" name="submit" value="GO" class="form-btn"></a>
 
     <footer>
           <p class="text-center"><a href="#"><img src="https://img.icons8.com/material-sharp/20/contact-card.png" alt=""></a>: 7977318761</p>
