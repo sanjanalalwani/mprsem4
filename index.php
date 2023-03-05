@@ -15,11 +15,11 @@ if(mysqli_num_rows($result)>0){
     $row=mysqli_fetch_array($result);
     if($row['user_type']== 'teacher'){
         $_SESSION['teacher_name']=$row['name'];
-        header('location:teacher.php');
+        header('location:admin.php');
     }
     elseif($row['user_type']== 'student'){
         $_SESSION['student_name']=$row['name'];
-        header('location:student.php');
+        header('location:user.php');
 }
 }
 else{
@@ -27,8 +27,6 @@ else{
 }
 };
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +35,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Performance Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
