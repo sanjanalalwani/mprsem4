@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Student Performance Tracker final.png" alt="" width="130px" class="center">
+            </div>
+            <ul>
+                <li class="home"><a href="index.php">Home</a></li>
+            </ul>
+            <ul>
+                <li class="about"><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <ul>
+                        <li class="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">My Profile</button>
+                    <div class="dropdown-content">
+                        <a href="index.php">Login</a>
+                        <a href="">Help</a>
+                        <a href="">Settings</a>
+                        <hr>
+                        <a href="">Support</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+<div id="overlay">
+    <form onsubmit="event.preventDefault(); validateForm()">
+        <h1>Contact Us</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+        <small class="error"></small>
+
+        <label for="number">Phone Number:</label>
+        <input type="text" id="number" placeholder="Your Number">
+        <small class="error"></small>
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your Message" rows="6"></textarea>
+        <small class="error"></small>
+
+        <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+        </div>
+
+    </form>
+</div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

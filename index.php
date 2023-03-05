@@ -55,6 +55,14 @@ else{
             </ul>
             <ul>
                 <li>
+<<<<<<< HEAD
+=======
+                    <ul>
+                        <li class="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+>>>>>>> 2cd304a8e0d5c04cb164685be03293ff6ffd7a68
                     <div class="dropdown">
                     <button class="dropbtn">My Profile</button>
                     <div class="dropdown-content">
