@@ -131,6 +131,7 @@ video{
     padding: 20px;
     padding-bottom: 60px;
     background: #eee;
+    height: 400px;
 }
 .form-container form{
     padding: 20px;
