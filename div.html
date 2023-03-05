@@ -1,37 +1,26 @@
-<?php
-@include 'config.php';
-session_start();
-if(!isset($_SESSION['teacher_name'])){
-header('location:index.php');
-}
-?>
-
 <html>
 <body>
 <link rel="stylesheet" href="popup.css">
-
   <div class="center">
     <input type="checkbox" id="click">
     <label for="click" class="click-me">Choose</label>
     <div class="content">
       <div class="text">
-        Choose Class
+        Choose Division
      </div>
         <label for="click" id="temp">x</label>
 
     <form>
 
-        <label for="username">FE</label>
+        <label for="username">C1</label>
         <input type="radio" id="username">
-        <label for="username">SE</label>
+        <label for="username">C2</label>
         <input type="radio" id="username">
-        <label for="username">TE</label>
+        <label for="username">C3</label>
         <input type="radio"  id="username">
-        <label for="username">BE</label>
-        <input type="radio" id="username">
         
 
-      <a href="div.html"> <button>Submit</button></a>
+       <a href="subject.html"> <button>Submit</button></a>
 
     </form>
       </div>
